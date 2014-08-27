@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'csv'
 
-csv = CSV.read('./data/matchdata.csv')
+csv = CSV.open('matchdata.csv')
 
 csv.each do |row|
 

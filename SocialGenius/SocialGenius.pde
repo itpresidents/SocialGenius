@@ -3,6 +3,7 @@
 // this program creates a board of picture and name tiles that can be matched together
 
 import krister.Ess.*;  // import Ess library by Krister Olsson, http://www.tree-axis.com/Ess/
+import java.util.*;
 
 String version = "2.0.9";
 int tilesX = 5;    // number of tiles across
@@ -69,7 +70,7 @@ void setup() {
     images[i] = database[i][0];
   }
   tImage = new PImage[dbSize];
-  softclickSound= new AudioChannel("softclick.wav"); 
+  softclickSound= new AudioChannel("softclick_1-2.aif"); 
   glassSound=new AudioChannel("glass.wav"); 
   feile1Sound=new AudioChannel("feile1.wav"); 
   socialGeniusSound = new AudioChannel("SocialGenius.wav");
@@ -116,8 +117,6 @@ void mousePressed() {
 void keyPressed() {
   theGame.keyPressed();
 }
-
-
 
 public void stop() { 
   Ess.stop();
